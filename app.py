@@ -42,8 +42,8 @@ def process_form():
     values = {
         'contract-month-month': float(request.form['contract-month-month']),
         'tenure': float(request.form['tenure']),
-        'internet-fo': float(request.form['internet-fo']),
         'monthly-charges': float(request.form['monthly-charges']),
+        'internet-fo': float(request.form['internet-fo']),
         'payment-electonic': float(request.form['payment-electonic']),
     }
     
@@ -57,8 +57,8 @@ def process_form():
     input_values = {
         "Contract Month to Month (0,1)": values['contract-month-month'],
         "Tenure (months)": values['tenure'],
-        "Internet Fiber Optics (0,1)": values['internet-fo'],
         "Monthly Charges ($)": values['monthly-charges'],
+        "Internet Fiber Optics (0,1)": values['internet-fo'],
         "Electronic Payment": values['payment-electonic'],
     }
 
@@ -67,8 +67,8 @@ def process_form():
     model_params = [[
         values['contract-month-month'],
         values['tenure'],
-        values['internet-fo'],
         values['monthly-charges'],
+        values['internet-fo'],
         values['payment-electonic'],
     ]]
 
