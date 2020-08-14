@@ -17,7 +17,7 @@
         </div>
       </div>
       This customer is predicted to churn, with
-      {{ (probabilities[0] * 100) | round(4) }}%
+      {{ (probabilities[1] * 100) | round(4) }}%
       probability.
     </div>
   {% else %}
@@ -32,7 +32,7 @@
         </div>
       </div>
       This customer is predicted to stay, with
-      {{ (probabilities[1] * 100) | round(4) }}%
+      {{ (probabilities[0] * 100) | round(4) }}%
       probability.
     </div>
   {% endif %}
