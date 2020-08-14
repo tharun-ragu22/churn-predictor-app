@@ -81,7 +81,7 @@ def process_form():
 
     # model.predict_proba returns an array containing the probabilities of each class
     #    e.g. => [[0.65566831, 0.34433169]]
-    probabilities = model.predict_proba(model_params)[1]
+    probabilities = model.predict_proba(model_params)[0]
     print(probabilities)
 
     return render_template('results.html', prediction=prediction, probabilities=probabilities, input_values=input_values, form_values=values)
