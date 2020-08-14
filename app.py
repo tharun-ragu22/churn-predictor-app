@@ -69,7 +69,7 @@ def process_form():
         values['tenure'],
         values['internet-fo'],
         values['monthly-charges'],
-        values['payment-electronic'],
+        values['payment-electonic'],
     ]]
 
     # Use our model to perform predictions
