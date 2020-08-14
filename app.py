@@ -42,7 +42,7 @@ def process_form():
     values = {
         'contract-month-month': float(request.form['contract-month-month']),
         'tenure': float(request.form['tenure']),
-        'internet-fo': float(request.form['winternet-fo']),
+        'internet-fo': float(request.form['internet-fo']),
         'monthly-charges': float(request.form['monthly-charges']),
         'payment-electonic': float(request.form['payment-electonic']),
     }
@@ -69,7 +69,7 @@ def process_form():
         values['tenure'],
         values['internet-fo'],
         values['monthly-charges'],
-        values['payment-electronic'],
+        values['payment-electonic'],
     ]]
 
     # Use our model to perform predictions
